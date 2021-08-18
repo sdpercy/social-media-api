@@ -33,24 +33,24 @@
   ## Endpoints
 
   ### User <br />
-  Get all users - `GET /api/users`
-  Create a user - `POST /api/users`
-  Get user by Id - `GET /api/users/:id`
-  Update a user - `PUT /api/users/:id`
-  Delete a user - `DELETE /api/users/:id`
-  Add a friend - `PUT /api/users/:userId/friends/:friendId`
-  Delete a friend - `DELETE /api/users/:userId/friends/:friendId`
+  Get all users - `GET /api/users`<br />
+  Create a user - `POST /api/users`<br />
+  Get user by Id - `GET /api/users/:id`<br />
+  Update a user - `PUT /api/users/:id`<br />
+  Delete a user - `DELETE /api/users/:id`<br />
+  Add a friend - `PUT /api/users/:userId/friends/:friendId`<br />
+  Delete a friend - `DELETE /api/users/:userId/friends/:friendId`<br />
 
   ### Thought <br />
-  Get all thoughts - `GET /api/thoughts`
-  Create a thought - `POST /api/thoughts`
-  Get thought by ID - `GET /api/thoughts/:id`
-  Update a thought - `PUT /api/thoughts/:id`
-  Delete a thought - `DELETE /api/thoughts/:id`
+  Get all thoughts - `GET /api/thoughts`<br />
+  Create a thought - `POST /api/thoughts`<br />
+  Get thought by ID - `GET /api/thoughts/:id`<br />
+  Update a thought - `PUT /api/thoughts/:id`<br />
+  Delete a thought - `DELETE /api/thoughts/:id`<br />
 
   ### Reaction <br />
-  Add a reaction - `PUT /api/thoughts/:id/reactions`
-  Delete a reaction - `DELETE /api/thoughts/:id/reactions`
+  Add a reaction - `PUT /api/thoughts/:id/reactions`<br />
+  Delete a reaction - `DELETE /api/thoughts/:id/reactions`<br />
 
   ## Questions
 
