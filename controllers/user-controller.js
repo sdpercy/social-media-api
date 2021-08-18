@@ -147,4 +147,4 @@ deleteFriend({ params }, res) {
 }
 }
 
-module.exports = UserController;
+module.exports = userController;
