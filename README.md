@@ -5,7 +5,7 @@
   ## Table of Contents
   1. [Description](#description)
   2. [Installation](#installation)
-  3. [UserStory](#userstory)
+  3. [UserStory](#user-story)
   5. [Models](#model)
   6. [Endpoints](#endpoints)
   7. [Questions](#questions)
