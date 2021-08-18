@@ -93,7 +93,7 @@ addFriend({ params }, res) {
             return;
         }
         // add userId to friendId's friend list
-        User.findOneAndUpdate(
+        return User.findOneAndUpdate(
             { _id: params.friendId },
             { $addToSet: { friends: params.userId } },
             { new: true, runValidators: true }
@@ -123,7 +123,7 @@ deleteFriend({ params }, res) {
             return;
         }
        
-        User.findOneAndUpdate(
+        return User.findOneAndUpdate(
             { _id: params.friendId },
             { $pull: { friends: params.userId } },
             { new: true, runValidators: true }
