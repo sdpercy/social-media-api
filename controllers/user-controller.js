@@ -1,5 +1,11 @@
 const { User, Thought } = require('../models');
 
+// example data
+//{
+//    "username": "lernantino",
+//    "email": "lernantino@gmail.com"
+//  }
+
 const userController = {
 //GET /api/users
     getAllUsers(req, res) {

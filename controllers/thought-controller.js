@@ -2,6 +2,13 @@ const { User, Thought, Reaction } = require('../models');
 
 const thoughtController = {
 
+// example data
+// {
+//     "thoughtText": "Here's a cool thought...",
+//     "username": "lernantino",
+//     "userId": "5edff358a0fcb779aa7b118b"
+//   }
+
     //GET /api/thoughts
     getAllThoughts(req, res) {
         Thought.find({})
@@ -54,6 +61,23 @@ const thoughtController = {
                 res.json(dbUserData);
             })
             .catch(err => res.json(err));
+        })
+        .catch(err => res.status(400).json(err));
+    },
+
+    // PUT /api/thoughts/:id
+    updateThought({ params, body }, res) {
+        Thought.findOneAndUpdate(
+            { _id: params.id },
+            body,
+            { new: true }
+        )
+        .then(dbThoughtData => {
+            if (!dbThoughtData) {
+                res.status(404).json({ message: 'Thought not found with this id' });
+                return;
+            }
+            res.json(dbThoughtData);
         })
         .catch(err => res.status(400).json(err));
     },
