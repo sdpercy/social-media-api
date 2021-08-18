@@ -1,7 +1,5 @@
 # Social Media API
 
-  <br />
-
   ## Table of Contents
   1. [Description](#description)
   2. [Installation](#installation)
