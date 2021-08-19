@@ -18,6 +18,8 @@
   4. Run `npm start` which will start the server 
   5. Use [Insomnia](https://insomnia.rest/) or a similar application to test the REST API.
   
+  See attached demo video "social-media-api.mp4"
+  
   ## User Story
   AS A social media startup I WANT an API for my social network that uses a NoSQL database SO THAT my website can handle large amounts of unstructured data.
   
