@@ -39,7 +39,7 @@ getUserById({ params }, res) {
     });
 },
 
-//POST /api/users/
+//POST /api/users/ CREATE USER
 createUser({ body }, res) {
     User.create(body)
     .then(dbUserData => res.json(dbUserData))
@@ -85,9 +85,8 @@ deleteUser({ params }, res) {
     .catch(err => res.status(400).json(err));
 },
 
-//POST /api/users/:userId/friends/:friendId
-addFriend({ params }, res) {
-    // add friendId to userId's friend list
+//POST /api/users/:userId/friends/:friendId  ADD FRIEND
+addFriend({ params }, res) { 
     User.findOneAndUpdate(
         { _id: params.userId },
         { $addToSet: { friends: params.friendId } },
@@ -98,7 +97,7 @@ addFriend({ params }, res) {
             res.status(404).json({ message: 'User not found with this userId' });
             return;
         }
-        // add userId to friendId's friend list
+        
         return User.findOneAndUpdate(
             { _id: params.friendId },
             { $addToSet: { friends: params.userId } },
